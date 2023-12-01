@@ -1,0 +1,23 @@
+header {
+    background-image: url(../../Pictures/dactfp5-95ae913e-2c91-4a06-bd43-7e70986355d5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1, h2, h3, ul, p, li {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
