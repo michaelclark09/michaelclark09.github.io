@@ -5,8 +5,12 @@
 body {
     font-family: sans-serif;
 }
+h1 {
+    text-align: center;
+    text-shadow: #333;
+}
 
-h1, h2, h3, ul, p, li {
+h2, h3, ul, p, li {
     text-align: center;
     color: #333;
 }
