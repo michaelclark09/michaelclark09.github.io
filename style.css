@@ -1,5 +1,5 @@
-header {
-    color: aliceblue;
+.navbar, .navbar-brand, .nav-link {
+    color: aliceblue !important;
 }
 
 body {
