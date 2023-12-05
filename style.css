@@ -39,11 +39,11 @@ body {
     display:inline-block;
     margin-right:20px;
   }
-  .smoothscroll {
+  .smoothScroll {
     color:white;
     font-weight:bold;
   }
-  .smoothscroll:hover {
+  .smoothScroll:hover {
     background-color:#333;
   }
   /* Main content styles */
@@ -68,10 +68,10 @@ body {
     color:white;
     padding:20px;
   }
-  .form-label {
+  .formLabel {
     color:white;
   }
-  .form-control {
+  .formControl {
     background-color:#333;
     border-color:#ccc;
     color:white;
