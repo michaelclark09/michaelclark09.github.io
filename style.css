@@ -1,85 +1,119 @@
 /* General styles */
 
 body {
-    font-family:sans-serif;
-  }
-  a {
-    text-decoration:none;
-    color:aliceblue;
-    background-color:#333;
-    padding:10px;
-  }
-  /* Header styles */
-  
-  header {
-    background-color:#333;
-    color:white;
-    padding:20px;
-    text-align:center;
-  }
-  h1 {
-    color:white;
-    font-size:24px;
-    margin-bottom:10px;
-  }
-  img {
-    margin:0 auto;
-    width:150px;
-    height:150px;
-    border-radius:50%;
-  }
-  /* Navigation styles */
-  
-  nav ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-  }
-  nav li {
-    display:inline-block;
-    margin-right:20px;
-  }
-  .smoothScroll {
-    color:white;
-    font-weight:bold;
-  }
-  .smoothScroll:hover {
-    background-color:#333;
-  }
-  /* Main content styles */
-  
-  main {
-    padding:20px;
-  }
-  section {
-    margin-bottom:20px;
-  }
-  h2 {
-    font-size:20px;
-    margin-bottom:10px;
-  }
-  ul,p {
-    text-align:justify;
-  }
-  /* Contact form styles */
-  
-  #contact {
-    background-color:#333;
-    color:white;
-    padding:20px;
-  }
-  .formLabel {
-    color:white;
-  }
-  .formControl {
-    background-color:#333;
-    border-color:#ccc;
-    color:white;
-  }
-  button {
-    background-color:aliceblue;
-    color:#333;
-    border-radius:0;
-    padding:10px 20px;
-  }
-  
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #333;
+  padding: 10px;
+}
+
+/* Header styles */
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+img {
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+/* Navigation styles */
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.smoothScroll {
+  color: white;
+  font-weight: bold;
+}
+
+.smoothScroll:hover {
+  background-color: #333;
+}
+
+/* Main content styles */
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul,
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: none;
+  text-decoration: none;
+  text-align: justify;
+}
+
+/* Contact form styles */
+
+#contact {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.formLabel {
+  color: white;
+  display: block;
+}
+
+.formControl {
+  background-color: white;
+  border-color: #ccc;
+  width: 25%;
+}
+
+#yourEmailAddress {
+  width: calc(2/3 * 25%);
+}
+
+button {
+  background-color: aliceblue !important;
+  color: black;
+  border-radius: 0;
+  padding: 10px 20px;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
