@@ -1,27 +1,36 @@
+/* Variables */
+
+:root {
+  --primaryColour: #333;
+  --secondaryColour: aliceblue;
+  --tertiaryColour: white;
+}
+
+
 /* General styles */
 
 body {
   font-family: sans-serif;
 }
 
+
 a {
   text-decoration: none;
-  color: aliceblue;
-  background-color: #333;
+  color: var(--primaryColour);
   padding: 10px;
 }
 
 /* Header styles */
 
 header {
-  background-color: #333;
-  color: white;
+  background-color: var(--primaryColour);
+  color: var(--tertiaryColour);
   padding: 20px;
   text-align: center;
 }
 
 h1 {
-  color: white;
+  color: var(--tertiaryColour);
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -47,12 +56,14 @@ nav li {
 }
 
 .smoothScroll {
-  color: white;
+  color: var(--tertiaryColour);
   font-weight: bold;
+  scroll-behavior: smooth;
 }
 
 .smoothScroll:hover {
-  background-color: #333;
+  background-color: var(--primaryColour);
+  ;
 }
 
 /* Main content styles */
@@ -63,6 +74,18 @@ main {
 
 section {
   margin-bottom: 20px;
+}
+
+.textLink {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 0px;
+  color: var(--primaryColour);
 }
 
 h2 {
@@ -86,19 +109,19 @@ p {
 /* Contact form styles */
 
 #contact {
-  background-color: #333;
-  color: white;
+  background-color: var(--primaryColour);
+  color: var(--tertiaryColour);
   padding: 20px;
   text-align: left;
 }
 
 .formLabel {
-  color: white;
+  color: var(--tertiaryColour);
   display: block;
 }
 
 .formControl {
-  background-color: white;
+  background-color: var(--tertiaryColour);
   border-color: #ccc;
   width: 25%;
 }
@@ -107,10 +130,10 @@ p {
   width: calc(2/3 * 25%);
 }
 
-button {
-  background-color: aliceblue !important;
-  color: black;
-  border-radius: 0;
+button.btnPrimary {
+  background-color: var(--secondaryColour);
+  color: var(--primaryColour);
+  border-radius: 10px;
   padding: 10px 20px;
   border: none;
   appearance: none;
