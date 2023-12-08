@@ -1,35 +1,142 @@
-.navbar, .navbar-brand, .nav-link {
-    color: aliceblue !important;
+/* Variables */
+
+:root {
+  --primaryColour: #333;
+  --secondaryColour: aliceblue;
+  --tertiaryColour: white;
+}
+
+
+/* General styles */
+
+body {
+  font-family: sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--primaryColour);
+  padding: 10px;
+}
+
+/* Header styles */
+
+header {
+  background-color: var(--primaryColour);
+  color: var(--tertiaryColour);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--tertiaryColour);
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
-
-body {
-    font-family: sans-serif;
-}
-h1 {
-    text-align: center;
-    text-shadow: #333;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
 }
 
-h2, h3, ul, p, li {
-    text-align: center;
-    color: #333;
+/* Navigation styles */
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+nav li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-li {
-    margin: 10px 0;
+.smoothScroll {
+  color: var(--tertiaryColour);
+  font-weight: bold;
+  scroll-behavior: smooth;
+}
+
+.smoothScroll:hover {
+  background-color: var(--primaryColour);
+  ;
+}
+
+/* Main content styles */
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.textLink {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 0px;
+  color: var(--primaryColour);
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul,
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: none;
+  text-decoration: none;
+  text-align: justify;
+}
+
+/* Contact form styles */
+
+#contact {
+  background-color: var(--primaryColour);
+  color: var(--tertiaryColour);
+  padding: 20px;
+  text-align: left;
+}
+
+.formLabel {
+  color: var(--tertiaryColour);
+  display: block;
+}
+
+.formControl {
+  background-color: var(--tertiaryColour);
+  border-color: #ccc;
+  width: 25%;
+}
+
+#yourEmailAddress {
+  width: calc(2/3 * 25%);
+}
+
+button.btnPrimary {
+  background-color: var(--secondaryColour);
+  color: var(--primaryColour);
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
