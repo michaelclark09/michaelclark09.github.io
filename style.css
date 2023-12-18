@@ -36,17 +36,24 @@ header {
   width: 100%;
 }
 
-h1 {
+#headerContent {
+  display: flex;
+  align-items: center;
+}
+
+#headerContent h1 {
   color: var(--tertiaryColour);
   font-size: 24px;
   margin-bottom: 10px;
   padding-top: 0.5em;
+  width: 50%;
 }
 
-img {
+#headerContent img {
   margin: 0 auto;
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  max-width: 35%;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -154,14 +161,28 @@ p {
   display: block;
 }
 
+/* setting width for smaller screens */
+
 .formControl {
   background-color: var(--tertiaryColour);
   border-color: #ccc;
-  width: 25%;
+  width: 60%;
 }
 
 #yourEmailAddress {
-  width: calc(2/3 * 25%);
+  width: 60%;
+}
+
+/* setting width for larger screens */
+
+@media screen and (min-width: 1000px) {
+  .formControl {
+    width: 35%;
+  }
+
+  #yourEmailAddress {
+    width: calc(2/3 * 35%);
+  }
 }
 
 button.btnPrimary {
