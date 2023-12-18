@@ -1,6 +1,8 @@
 window.onload = function () {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
+    console.log("readyState: " + this.readyState);
+    console.log("status: " + this.status);
     if (this.readyState == 4 && this.status == 200) {
       populateHTML(this);
     }
