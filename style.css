@@ -41,6 +41,7 @@ h1 {
   color: var(--tertiaryColour);
   font-size: 24px;
   margin-bottom: 10px;
+  padding-top: 0.5em;
 }
 
 img {
