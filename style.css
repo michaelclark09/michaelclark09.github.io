@@ -7,16 +7,17 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
 /* General styles */
 
 #fullPageWrapper {
   height: 100vh;
 }
 
-/*body {
-  
-}*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
 
 
 a {
@@ -30,51 +31,61 @@ a {
 header {
   background-color: var(--primaryColour);
   color: var(--tertiaryColour);
-  padding: 20px;
+  padding: 1em;
   text-align: center;
-  position: absolute;
+  width: 100%;
 }
 
-h1 {
+#headerContent {
+  display: flex;
+  align-items: center;
+}
+
+#headerContent h1 {
   color: var(--tertiaryColour);
   font-size: 24px;
   margin-bottom: 10px;
+  padding-top: 0.5em;
+  width: 50%;
 }
 
-img {
+#headerContent img {
   margin: 0 auto;
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  max-width: 35%;
+  height: auto;
   border-radius: 50%;
-  position: relative;
-}
-
-.header::last-child {
-  z-index: 2;
 }
 
 /* Navigation styles */
 
 #navigation {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 3;
   background-color: var(--primaryColour);
   padding: 3px;
-  margin-top: -100px;
+  width: 100%;
+  margin-left: -20px;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 1em;
+  padding: 1em;
 
 }
 
 nav li {
   display: inline-block;
   margin-right: 20px;
-
+  padding: 1em;
 }
 
 .smoothScroll {
@@ -90,9 +101,13 @@ nav li {
 
 /* Main content styles */
 
+main::before {
+  content: "";
+  display: block;
+  height: 1em;
+}
+
 main {
-  padding: 25px;
-  padding-top: 35%;
   z-index: 1;
   min-height: fit-content;
 }
@@ -146,14 +161,28 @@ p {
   display: block;
 }
 
+/* setting width for smaller screens */
+
 .formControl {
   background-color: var(--tertiaryColour);
   border-color: #ccc;
-  width: 25%;
+  width: 60%;
 }
 
 #yourEmailAddress {
-  width: calc(2/3 * 25%);
+  width: 60%;
+}
+
+/* setting width for larger screens */
+
+@media screen and (min-width: 1000px) {
+  .formControl {
+    width: 35%;
+  }
+
+  #yourEmailAddress {
+    width: calc(2/3 * 35%);
+  }
 }
 
 button.btnPrimary {

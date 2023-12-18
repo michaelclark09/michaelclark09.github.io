@@ -1,0 +1,34 @@
+<root>
+    <education>
+        <degree>Bachelor's in Computer Gameplay Design and Production</degree>
+        <university>Staffordshire University</university>
+        <year>2013 - 2016</year>
+    </education>
+    <workExperience>
+        <job>
+            <title>QA Analyst</title>
+            <company>CMap</company>
+            <year>November 2023 - Present</year>
+        </job>
+        <job>
+            <title>Software QA Tester</title>
+            <company>CTI Digital</company>
+            <year>December 2022 - November 2023</year>
+        </job>
+        <job>
+            <title>QA Tester</title>
+            <company>Silverchip</company>
+            <year>July 2021 - December 2022</year>
+        </job>
+    </workExperience>
+    <skills>
+        <skill>JavaScript</skill>
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+        <skill>Cypress</skill>
+        <skill>Functional Testing</skill>
+        <skill>Regression Testing</skill>
+        <skill>System Testing</Skill>
+        <skill>Exploratory Testing</skill>
+    </skills>
+</root>
