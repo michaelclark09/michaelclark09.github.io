@@ -110,9 +110,9 @@ main::before {
 main {
   z-index: 1;
   min-height: fit-content;
-  padding: 1em;
-  margin: 1em;
-  border: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 0.5em;
 }
 
 section {
